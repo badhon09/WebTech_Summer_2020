@@ -2,13 +2,16 @@
 if(isset($_POST['submit']))
 {
 	$name=$_POST['name'];
-  
+	
+
+
    
  
 	
 	if($name=="")	{
 		echo "provide name !";	
 	}
+	
 
 	else
 	
@@ -22,6 +25,7 @@ if(isset($_POST['submit']))
 
 
 ?>
+
 
 
 
@@ -67,7 +71,7 @@ if(isset($_POST['submit']))
 				Email
 			</td>
             <td width="300px">
-				<input type="text" name="">
+				<input type="email" name="email" data-error="hints:sample@example.com" required>
 			</td>
 			<td width="10px">
 				
