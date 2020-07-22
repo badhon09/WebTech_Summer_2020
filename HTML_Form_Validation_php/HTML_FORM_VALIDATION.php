@@ -1,3 +1,38 @@
+<?php 
+if(isset($_POST['submit']))
+{
+	$name=$_POST['name'];
+  
+   
+ 
+	
+	if($name=="")	{
+		echo "provide name !";	
+	}
+
+	else
+	
+	{
+		echo "Succcess"	;
+		
+	}	
+
+
+}
+
+
+?>
+
+
+
+
+
+
+
+
+
+
+
 <html>
 <head>
     
@@ -7,7 +42,7 @@
     <body>
         <center>
             
-            <form>
+            <form method="post">
 		
 	<table border="1">
 		<tr aling="center">
@@ -20,7 +55,7 @@
 				Name
 			</td>
             <td width="300px">
-				<input type="text" name="">
+				<input type="text" name="name" pattern="[A-Za-z./]{2,}">
 			</td>
 			<td width="10px">
 				
@@ -111,7 +146,7 @@
             
             <td colspan="3">
             
-                  <button type="submit" value="Submit">Submit</button> 
+                  <button type="submit" name="submit" value="Submit">Submit</button> 
                 <button type="reset" value="Reset">Reset</button></td>
             
 		</tr>
