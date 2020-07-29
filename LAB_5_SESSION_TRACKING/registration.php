@@ -9,7 +9,8 @@
 		$uname 		= $_POST['userName'];
         $password 	= $_POST['password'];
         $cpassword  = $_POST['confirmPassword'];
-        $gender     = $_POST['gender'];
+		$gender     = $_POST['gender'];
+		$dob		= $_POST['dob'];
 
         if($password!=$cpassword){
 
@@ -20,7 +21,8 @@
 			$_SESSION['email'] 	= $email;
             $_SESSION['userName'] 		= $uname;
             $_SESSION['password']= $password;
-            $_SESSION['gender']= $gender;
+			$_SESSION['gender']= $gender;
+			$_SESSION['dob']= $dob;
 
             echo "done!";
             header('location: login.php');
@@ -30,12 +32,41 @@
 ?>
 
 
+<html>
+	<head>
+		<title>Registration</title>
+	</head>
+	<body>
 
-<fieldset>
+
+		<center>
+				<table width="100%" border="1">
+					<tr height="100px">
+						<td width="100px">
+							<a href="index.html">
+								<img src="./logo (1).png" width="150px" height="100px">
+                            </a>
+                            <td align="right" colspan="2">
+                                <a href="login.php">Home  | </a>
+                                <a href="login.php">login  | </a>
+                                <a href="login.php">Registration     | </a>
+                            </td>
+                            
+                            
+						</td>
+						
+                    </tr>
+                    
+
+
+					<tr width="70%" height="300px">
+						<td colspan="3">
+         <center>                     
+<fieldset width="100%">
     <legend><b>REGISTRATION</b></legend>
 	<form method="post">
 		<br/>
-		<table width="100%" cellpadding="0" cellspacing="0">
+		<table width="70%" cellpadding="0" cellspacing="0">
 			<tr>
 				<td>Name</td>
 				<td>:</td>
@@ -78,8 +109,8 @@
 				<td colspan="3">
 					<fieldset>
 						<legend>Gender</legend>    
-						<input name="gender" type="radio">Male
-						<input name="gender" type="radio">Female
+						<input name="gender" value="male" type="radio">Male
+						<input name="gender" value="female" type="radio">Female
 						<input name="gender" type="radio">Other
 					</fieldset>
 				</td>
@@ -90,9 +121,9 @@
 				<td colspan="3">
 					<fieldset>
 						<legend>Date of Birth</legend>    
-						<input type="text" size="2" />/
-						<input type="text" size="2" />/
-						<input type="text" size="4" />
+						<input name="dob" type="text" size="2" />/
+						<input name="dob" type="text" size="2" />/
+						<input name="dob" type="text" size="4" />
 						<font size="2"><i>(dd/mm/yyyy)</i></font>
 					</fieldset>
 				</td>
@@ -104,3 +135,14 @@
 		<input type="reset">
 	</form>
 </fieldset>
+</center>  
+                            
+                            </td>
+					</tr>
+					<tr height="50px">
+						<td colspan="3" align="center">@copyright 2020</td>
+					</tr>
+				</table>		
+		</center>
+	</body>
+</html>

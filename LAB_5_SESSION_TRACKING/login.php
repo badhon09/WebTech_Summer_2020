@@ -26,18 +26,38 @@
 
 
 ?>
-<table style="width:100% ; border:1px solid;" >
-    <tr>
-      <th width="100px"><img src="./logo (1).png"></th>
-      <th width="auto"></th>
-      <th width="200px"><a href="">login | </a><a href="">login | </a><a href="">login</a></th>
-    </tr>
-    
-    <tr>
-        
-      <td></td>
-      <hr>
-      <td><fieldset>
+
+<html>
+	<head>
+		<title>Registration</title>
+	</head>
+	<body>
+
+
+		<center>
+				<table width="100%" border="1">
+					<tr height="100px">
+						<td width="100px">
+							<a href="index.html">
+								<img src="./logo (1).png" width="150px" height="100px">
+                            </a>
+                            <td align="right" colspan="2">
+                                <a href="login.php">Home  | </a>
+                                <a href="login.php">login  | </a>
+                                <a href="registration.php">Registration     | </a>
+                            </td>
+                            
+                            
+						</td>
+						
+                    </tr>
+                    
+
+
+					<tr width="70%" height="300px">
+						<td colspan="3">
+         <center>                     
+         <fieldset>
         <legend><b>LOGIN</b></legend>
         <form method="post">
             <table>
@@ -58,15 +78,48 @@
             <input name="submit" type="submit" value="Submit">        
             <a href="forgot_password.html">Forgot Password?</a>
         </form>
-    </fieldset></td>
-      <td></td>
-    </tr>
-    
-    <tr>
-      <td></td>
-      <td>copyright</td>
-      <td></td>
-    </tr>
-  </table>
+    </fieldset>
+</center>  
+                            
+                            </td>
+					</tr>
+					<tr height="50px">
+						<td colspan="3" align="center">@copyright 2020</td>
+					</tr>
+				</table>		
+		</center>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

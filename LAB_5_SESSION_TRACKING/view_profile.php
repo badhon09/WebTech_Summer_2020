@@ -1,12 +1,12 @@
 <?php
 session_start();
 
-//$name = $_SESSION['username'];
+
 
 ?>
 
 
-<table style="width:100% ; border:1px solid;" >
+<table border="1" style="width:100% ; border:1px solid;" >
     <tr>
       <th width="100px"><img src="./logo (1).png"></th>
       <th width="auto" ></th>
@@ -27,7 +27,17 @@ session_start();
       </td>
       
       <td height="400px">
-      <h1>Welcome <?php  echo $_SESSION['userName'];	 ?></h1>
+      <fieldset>
+        <legend><b>PROFILE</b></legend>
+        <img src="./user.png" width="60px">
+        <h6>Name     : <?php echo $_SESSION['name']; ?> </h6><hr>
+        <h6>Email     : <?php echo $_SESSION['email']; ?></h6><hr>
+        <h6>Gender     : <?php echo $_SESSION['gender']; ?></h6><hr>
+        <h6>Dob    : <?php echo $_SESSION['dob']; ?></h6><hr>
+
+        <a>edit profile</a>
+
+</fieldset>
 
 </td>
       <td></td>
