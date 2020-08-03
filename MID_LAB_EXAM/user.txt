@@ -1,0 +1,3 @@
+2|jon|jon|jon@mail.com|admin
+2|bad|bad|bad@mail.com|user
+5|boss|boss|boss@mail.com|admin
